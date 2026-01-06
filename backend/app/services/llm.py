@@ -13,7 +13,7 @@ openai_client = OpenAI(
 
 
 # split text into token-based chunks
-def chunk_text(text, model="gemini-2.5-flash", max_tokens=2000):
+def chunk_text(text, model="gemini-1.5-flash", max_tokens=2000):
     enc = tiktoken.get_encoding("cl100k_base")
     tokens = enc.encode(text)
     chunks = []
